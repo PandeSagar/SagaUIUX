@@ -5,13 +5,15 @@
   --bg-black-50:#e8dfec;
   --text-black-900:#302e4d;
   --text-black-700:#504e70;
+  --boxshadow-black:rgb(48, 46, 77, 0.15);
 }
 body.dark{
   --bg-black-900:#151515;
   --bg-black-100:#222222;
   --bg-black-50:#393939;
   --text-black-900:#ffffff;
-  --text-black-700:#e9e9e9;
+  --text-black-700:#f8eeee;
+  --boxshadow-black:rgba(250, 249, 252, 0.438);
 }
 body{
   margin: 0;
@@ -35,9 +37,9 @@ ul
 {
   list-style: none;
 }
-/* .logImg {
+.logImg {
   height: 10px;
-} */
+}
 .section
 {
   background: var(--bg-black-900);
@@ -118,7 +120,7 @@ ul
   transform: scale(1.05);
 }
 .shadow-dark{
-  box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px var(--boxshadow-black);
 }
 /* Aside */
 .aside
@@ -488,7 +490,7 @@ h3.my-profession{
   transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner:hover{
-  box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px var(--boxshadow-black);
 }
 .service .service-item .service-item-inner .icon{
   height: 60px;
@@ -620,7 +622,7 @@ h3.my-profession{
   transition: all 0.3s ease;
 }
 .contact .contact-form .form-item .form-control:focus{
-  box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
+  box-shadow: 0 0 20px var(--boxshadow-black);
 }
 .contact .contact-form .form-item textarea.form-control{
   height: 140px;

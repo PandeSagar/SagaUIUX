@@ -47,13 +47,26 @@ ul
   display: block;
   padding: 0 30px;
   opacity: 1;
+  position: fixed;
+  left: 300px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.section-active
+{
+  z-index: 2;
+  opacity: 1;
 }
 .hidden{
   display: none !important;
 }
-.mainContent{
+/* .mainContent{
   padding-left: 300px;
-}
+} */
 .padd-15{
   padding-left: 15px;
   padding-right: 15px;
@@ -642,8 +655,8 @@ h3.my-profession{
   .aside{
     left: -300px;
   }
-  .mainContent{
-    padding-left: 0;
+  .section{
+    left: 0;
   }
   .about .about-content .personal-info .info-item p span{
     display: block;
